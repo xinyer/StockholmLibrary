@@ -7,4 +7,8 @@ public class LoginService {
         System.out.println("Hello login.");
     }
 
+    public void say() {
+        System.out.println("say hello");
+    }
+
 }
