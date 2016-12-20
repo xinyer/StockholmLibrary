@@ -52,11 +52,11 @@ public class LoginResp {
             this.accessToken = accessToken;
         }
 
-        public boolean isFresh() {
+        public boolean isIsFresh() {
             return isFresh;
         }
 
-        public void setFresh(boolean fresh) {
+        public void setIsFresh(boolean fresh) {
             isFresh = fresh;
         }
 
