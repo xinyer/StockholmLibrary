@@ -34,6 +34,7 @@ public class LoginResp {
 
         private UserBean user;
         private String accessToken;
+        private boolean isFresh;
 
         public UserBean getUser() {
             return user;
@@ -51,11 +52,18 @@ public class LoginResp {
             this.accessToken = accessToken;
         }
 
+        public boolean isFresh() {
+            return isFresh;
+        }
+
+        public void setFresh(boolean fresh) {
+            isFresh = fresh;
+        }
+
         public static class UserBean {
 
             private int id;
             private String phoneNumber;
-            private boolean isFresh;
 
             public int getId() {
                 return id;
@@ -73,13 +81,6 @@ public class LoginResp {
                 this.phoneNumber = phoneNumber;
             }
 
-            public boolean isFresh() {
-                return isFresh;
-            }
-
-            public void setFresh(boolean fresh) {
-                isFresh = fresh;
-            }
         }
     }
 }
