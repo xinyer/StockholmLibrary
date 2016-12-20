@@ -55,6 +55,7 @@ public class LoginResp {
 
             private int id;
             private String phoneNumber;
+            private boolean isFresh;
 
             public int getId() {
                 return id;
@@ -70,6 +71,14 @@ public class LoginResp {
 
             public void setPhoneNumber(String phoneNumber) {
                 this.phoneNumber = phoneNumber;
+            }
+
+            public boolean isFresh() {
+                return isFresh;
+            }
+
+            public void setFresh(boolean fresh) {
+                isFresh = fresh;
             }
         }
     }
