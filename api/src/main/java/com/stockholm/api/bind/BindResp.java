@@ -2,13 +2,23 @@ package com.stockholm.api.bind;
 
 public class BindResp {
 
-    private String success;
+    private String msg;
 
-    public String getSuccess() {
+    private boolean success;
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public boolean isSuccess() {
         return success;
     }
 
-    public void setSuccess(String success) {
+    public void setSuccess(boolean success) {
         this.success = success;
     }
 }
